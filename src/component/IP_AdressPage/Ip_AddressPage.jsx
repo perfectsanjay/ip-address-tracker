@@ -4,7 +4,7 @@ import arrow from "../../images/icon-arrow.svg";
 import MapComponent from "../MapComponent/MapComponent";
 
 const Home_Page = () => {
-  const [ipAddress, setIpAddress] = useState("");
+  const [ipAddress, setIpAddress] = useState('8.8.8.8');
   const [ipData, setIpData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -68,22 +68,22 @@ const Home_Page = () => {
 
               <div className="location">
                 <p>LOCATION</p>
-                <h1>
+                <h3>
                   {ipData.location.city}, {ipData.location.region}{" "}
                   {ipData.location.postalCode}
-                </h1>
+                </h3>
               </div>
               <div className="vertical-line"></div>
 
               <div className="timezone">
                 <p>TIMEZONE</p>
-                <h1>UTC {ipData.location.timezone}</h1>
+                <h3>UTC {ipData.location.timezone}</h3>
               </div>
               <div className="vertical-line"></div>
 
               <div className="ISP">
                 <p>ISP</p>
-                <h1>{ipData.isp}</h1>
+                <h3>{ipData.isp}</h3>
               </div>
             </div>
             <div className="map-container">
