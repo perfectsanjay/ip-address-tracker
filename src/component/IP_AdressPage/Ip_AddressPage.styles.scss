@@ -1,4 +1,4 @@
-body,*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -52,13 +52,14 @@ body,*{
         gap: 80px;
         background-color: white;
         width: 80%;
-        height: 120px;
+        height: 150px;
         // margin-left: 140px;
         border-radius: 20px;
-        padding: 30px;
+        padding: 10px;
         position: absolute;
         top:80%;
         left: 150px;
+        z-index: 2;
     }
     .vertical-line{
         width: 2px;
@@ -66,8 +67,56 @@ body,*{
         height: 70px;
 
     }
+
+    .map-container{
+        margin-top: 120px;
+        width: 100%;
+        overflow: hidden;
+        height: 500px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+
+    }
     
  
 
 
     
+@media screen and (max-width: 500px){
+    .ip-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        right: 10px;
+        left: 50px;
+
+        padding: 5px;
+        font-size: 10px;
+        
+    }
+    .vertical-line{
+        display: none;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .searchbar{
+        width: 60%;
+        display: flex;
+        margin-left: 100px;
+        
+    }
+    
+}

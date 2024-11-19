@@ -1,9 +1,11 @@
-import Home_Page from './component/IP_AdressPage/Ip_AddressPage';
+import {useEffect} from "react";
+import Home_Page from "./component/IP_AdressPage/Ip_AddressPage";
 
 function App() {
+ 
   return (
     <>
-      <Home_Page/>
+      <Home_Page />
     </>
   );
 }
